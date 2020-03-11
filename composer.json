@@ -1,0 +1,22 @@
+{
+    "name": "kplngi/background",
+    "description": "A Plugin to set a shop background image",
+    "type": "shopware-platform-plugin",
+    "version": "1.0.1",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Kplngi\\Background\\": "src/"
+        }
+    },
+    "extra": {
+        "shopware-plugin-class": "Kplngi\\Background\\KplngiBackground",
+        "label": {
+            "de-DE": "Shop Hintergrund",
+            "en-GB": "Shop Background"
+        }
+    },
+    "require": {
+        "shopware/core": "*"
+    }
+}

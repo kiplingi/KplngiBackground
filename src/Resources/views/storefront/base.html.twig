@@ -1,0 +1,9 @@
+{% sw_extends '@Storefront/storefront/base.html.twig' %}
+
+{% block base_body_inner %}
+    <div class="kplngi-background__background"
+        style="{{ context.extensions['kplngi_background'].inlineStyle }}">
+        <div class="kplngi-background__content"></div>
+    </div>
+    {{ parent() }}
+{% endblock %}

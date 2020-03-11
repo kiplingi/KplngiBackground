@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/platform/master/src/Core/System/SystemConfig/Schema/config.xsd">
+
+    <card>
+        <title>Configuration</title>
+        <title lang="de-DE">Konfiguration</title>
+
+        <input-field type="bool">
+            <name>active</name>
+            <label>Plugin active</label>
+            <defaultValue>true</defaultValue>
+            <helpText>Activate the plugin for the selected Sales Channel?</helpText>
+            <helpText lang="de-DE">Das Plugin für den gewählten Sales Channel aktivieren?</helpText>
+        </input-field>
+
+        <input-field type="single-select">
+            <name>backgroundType</name>
+            <label>Should an image or a color be displayed?</label>
+            <label lang="de-DE">Soll ein Bild oder eine Farbe angezeigt werden?</label>
+            <defaultValue></defaultValue>
+            <options>
+                <option>
+                    <id>image</id>
+                    <name>Image</name>
+                    <name lang="de-DE">Bild</name>
+                </option>
+                <option>
+                    <id>color</id>
+                    <name>Color</name>
+                    <name lang="de-DE">Image</name>
+                </option>
+            </options>
+        </input-field>
+
+        <input-field>
+            <name>imageUrl</name>
+            <label>URL of the image</label>
+            <label lang="de-DE">URL des Bildes</label>
+            <defaultValue></defaultValue>
+            <placeholder>https://www.URL.com/TO/IMAGE.jpg</placeholder>
+            <placeholder lang="de-DE">https://www.URL.de/ZUM/BILD.jpg</placeholder>
+            <helpText>The URL of the image. It is highly recommended to choose an as small as possible image.</helpText>
+            <helpText lang="de-DE">Die URL zum Bild. Es wird empfohlen ein so klein wie mögliches Bild zu wählen.</helpText>
+        </input-field>
+
+        <input-field>
+            <name>color</name>
+            <label>Hex color code</label>
+            <label lang="de-DE">Farbe als Hex Code</label>
+            <defaultValue></defaultValue>
+            <placeholder>#E0EBFE</placeholder>
+            <placeholder lang="de-DE">#E0EBFE</placeholder>
+            <helpText>Color as hex code</helpText>
+            <helpText lang="de-DE">Farbe als Hex Code</helpText>
+        </input-field>
+    </card>
+</config>
