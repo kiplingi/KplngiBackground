@@ -9,7 +9,10 @@ use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
 class StorefrontRender implements EventSubscriberInterface
 {
-    public $viewExtension;
+    /**
+     * @var ViewExtension
+     */
+    private $viewExtension;
 
     public function __construct(ViewExtension $viewExtension)
     {

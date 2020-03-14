@@ -10,6 +10,9 @@ use Shopware\Storefront\Page\Navigation\NavigationPage;
 
 class ViewExtension
 {
+    /**
+     * @var SystemConfigService
+     */
     private $systemConfigService;
 
     public function __construct(SystemConfigService $systemConfigService)
