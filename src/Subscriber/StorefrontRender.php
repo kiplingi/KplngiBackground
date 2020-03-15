@@ -19,7 +19,7 @@ class StorefrontRender implements EventSubscriberInterface
         $this->viewExtension = $viewExtension;
     }
 
-    public static function getSubscribedEvents()
+    public static function getSubscribedEvents(): array
     {
         return [
             StorefrontRenderEvent::class => 'onStorefrontRender'
