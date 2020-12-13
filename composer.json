@@ -2,7 +2,12 @@
     "name": "kplngi/background",
     "description": "A Plugin to set a shop background image",
     "type": "shopware-platform-plugin",
-    "version": "1.0.1",
+    "authors": [
+        {
+            "name": "Kiplingi"
+        }
+    ],
+    "version": "1.0.2",
     "license": "MIT",
     "autoload": {
         "psr-4": {
@@ -14,6 +19,18 @@
         "label": {
             "de-DE": "Shop Hintergrund",
             "en-GB": "Shop Background"
+        },
+        "description": {
+            "de-DE": "Es kann ein Bild oder eine Farbe für den Shop Hintergrund gewählt werden.",
+            "en-GB": "You can choose an image or a color for the shop background."
+        },
+        "manufacturerLink": {
+            "de-DE": "https://www.kiplingi.de/",
+            "en-GB": "https://www.kiplingi.de/"
+        },
+        "supportLink": {
+            "de-DE": "support@kiplingi.de",
+            "en-GB": "support@kiplingi.de"
         }
     },
     "require": {
