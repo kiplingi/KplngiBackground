@@ -21,8 +21,8 @@
             "en-GB": "Shop Background"
         },
         "description": {
-            "de-DE": "Es kann ein Bild oder eine Farbe für den Shop Hintergrund gewählt werden.",
-            "en-GB": "You can choose an image or a color for the shop background."
+            "de-DE": "Mit diesem Plugin kann im Administrationsbereich eine Farbe oder eine Bild URL ausgewählt werden. Dieses wird dann als Hintergrund für den Shop geladen.",
+            "en-GB": "With this plugin a color or an image URL can be selected in the administration area. This is then loaded as a background for the shop for an individual eye-catcher."
         },
         "manufacturerLink": {
             "de-DE": "https://www.kiplingi.de/",
