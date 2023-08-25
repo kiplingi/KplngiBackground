@@ -3,32 +3,32 @@
         xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/platform/master/src/Core/System/SystemConfig/Schema/config.xsd">
 
     <card>
-        <title lang="en-GB">Configuration</title>
+        <title>Configuration</title>
         <title lang="de-DE">Konfiguration</title>
 
         <input-field type="bool">
             <name>active</name>
-            <label lang="en-GB">Activate Plugin</label>
+            <label>Activate Plugin</label>
             <label lang="de-DE">Plugin aktivieren</label>
             <defaultValue>true</defaultValue>
-            <helpText lang="en-GB">Activate the plugin for the selected Sales Channel?</helpText>
+            <helpText>Activate the plugin for the selected Sales Channel?</helpText>
             <helpText lang="de-DE">Das Plugin für den gewählten Sales Channel aktivieren?</helpText>
         </input-field>
 
         <input-field type="single-select">
             <name>backgroundType</name>
-            <label lang="en-GB">Should an image or a color be displayed?</label>
+            <label>Should an image or a color be displayed?</label>
             <label lang="de-DE">Soll ein Bild oder eine Farbe angezeigt werden?</label>
             <defaultValue>color</defaultValue>
             <options>
                 <option>
                     <id>image</id>
-                    <name lang="en-GB">Image</name>
+                    <name>Image</name>
                     <name lang="de-DE">Bild</name>
                 </option>
                 <option>
                     <id>color</id>
-                    <name lang="en-GB">Color</name>
+                    <name>Color</name>
                     <name lang="de-DE">Farbe</name>
                 </option>
             </options>
@@ -36,24 +36,19 @@
 
         <input-field>
             <name>imageUrl</name>
-            <label lang="en-GB">URL of the image</label>
+            <label>URL of the image</label>
             <label lang="de-DE">URL des Bildes</label>
             <defaultValue></defaultValue>
-            <placeholder lang="en-GB">https://www.URL.com/TO/IMAGE.jpg</placeholder>
+            <placeholder>https://www.URL.com/TO/IMAGE.jpg</placeholder>
             <placeholder lang="de-DE">https://www.URL.de/ZUM/BILD.jpg</placeholder>
-            <helpText lang="en-GB">The URL of the image. It is highly recommended to choose an as small as possible image.</helpText>
+            <helpText>The URL of the image. It is highly recommended to choose an as small as possible image.</helpText>
             <helpText lang="de-DE">Die URL zum Bild. Es wird empfohlen ein so klein wie mögliches Bild zu wählen.</helpText>
         </input-field>
 
-        <input-field>
+        <input-field type="colorpicker">
             <name>color</name>
-            <label lang="en-GB">Hex color code</label>
+            <label>Hex color code</label>
             <label lang="de-DE">Farbe als Hex Code</label>
-            <defaultValue></defaultValue>
-            <placeholder lang="en-GB">#E0EBFE</placeholder>
-            <placeholder lang="de-DE">#E0EBFE</placeholder>
-            <helpText lang="en-GB">Color as hex code</helpText>
-            <helpText lang="de-DE">Farbe als Hex Code</helpText>
         </input-field>
     </card>
 </config>
