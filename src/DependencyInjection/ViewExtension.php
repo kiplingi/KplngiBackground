@@ -6,7 +6,6 @@ use Kplngi\Background\Configuration\PluginConfiguration;
 use Shopware\Core\System\SalesChannel\SalesChannelContext;
 use Shopware\Core\System\SystemConfig\SystemConfigService;
 use Shopware\Storefront\Event\StorefrontRenderEvent;
-use Shopware\Storefront\Page\Navigation\NavigationPage;
 
 class ViewExtension
 {
