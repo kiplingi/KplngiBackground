@@ -12,7 +12,7 @@ class PluginConfiguration extends Struct
     /**
      * @return string
      */
-    public function getInlineStyle(): string
+    public function getInlineStyle(): ?string
     {
         return $this->inlineStyle;
     }

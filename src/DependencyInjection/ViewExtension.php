@@ -33,17 +33,19 @@ class ViewExtension
 
         $pluginConfigurationStruct = new PluginConfiguration();
 
-        if (!$pluginConfiguration['KplngiBackground.config.backgroundType']) {
+        if (!array_key_exists('KplngiBackground.config.backgroundType', $pluginConfiguration)) {
             return;
         }
 
         if ($pluginConfiguration['KplngiBackground.config.backgroundType'] == 'image') {
-            if (!$pluginConfiguration['KplngiBackground.config.imageUrl']) {
+            if (!array_key_exists('KplngiBackground.config.imageUrl', $pluginConfiguration)) {
                 return;
             }
             $pluginConfigurationStruct->setInlineStyle('background-image: url(' . $pluginConfiguration['KplngiBackground.config.imageUrl'] . ')');
         } elseif ($pluginConfiguration['KplngiBackground.config.backgroundType'] == 'color') {
-            if (!$pluginConfiguration['KplngiBackground.config.color']) {
+            if (
+                !array_key_exists('KplngiBackground.config.color', $pluginConfiguration)
+            ) {
                 return;
             }
             $pluginConfigurationStruct->setInlineStyle('background-color:' . $pluginConfiguration['KplngiBackground.config.color']);
